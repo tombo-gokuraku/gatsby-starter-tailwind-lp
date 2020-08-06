@@ -9,6 +9,7 @@ import Button from "../components/Button"
 import H1 from "../components/H1"
 import H2 from "../components/H2"
 import H3 from "../components/H3"
+import H4 from "../components/H4"
 
 const IndexPage = () => {
   return (
@@ -19,6 +20,7 @@ const IndexPage = () => {
       <H1>h1</H1>
       <H2>h2</H2>
       <H3>h3</H3>
+      <H4>h4</H4>
       <P>Install the Gatsby CLI and create a project with this starter</P>
       <Pre>
         <code>
