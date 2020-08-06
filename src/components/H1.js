@@ -1,5 +1,10 @@
-import tw from "twin.macro"
+import tw, { styled, css } from "twin.macro"
 
-const H1 = tw.h1`text-gray-900 xl:(text-5xl pb-3 pt-4)  md:( text-4xl pb-2 pt-3 ) text-3xl pb-1 pt-2 font-bold`
+const H1 = styled.h1(() => [
+  tw`text-3xl font-bold text-gray-900 xl:text-5xl md:text-4xl`,
+  css`
+    margin-bottom: 0.35em;
+  `,
+])
 
 export default H1
