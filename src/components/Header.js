@@ -13,8 +13,8 @@ const Header = ({ siteTitle }) => {
         css`
           background: linear-gradient(
             to left,
-            ${theme`colors.primary`},
-            ${theme`colors.secondary`}
+            ${theme`colors.primary.default`},
+            ${theme`colors.secondary.default`}
           );
         `,
       ]}
