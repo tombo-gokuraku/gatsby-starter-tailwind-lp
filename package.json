@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-emotion-tailwind",
+  "name": "gatsby-starter-tailwind-lp",
   "private": true,
-  "description": "Gatsby starter for using Emotion and tailwind. Linting with ESLint and stylelint.",
+  "description": "Gatsby starter for landing page with Emotion and tailwind. Linting with ESLint and stylelint.",
   "version": "0.1.0",
   "author": "tombo gokuraku",
   "dependencies": {
@@ -41,7 +41,7 @@
     "stylelint-processor-styled-components": "^1.10.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby", "emotion", "tailwindcss", "Landing Pages"
   ],
   "license": "0BSD",
   "scripts": {
