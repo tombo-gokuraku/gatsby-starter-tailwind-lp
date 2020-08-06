@@ -7,6 +7,7 @@ import SEO from "../components/SEO"
 
 import Button from "../components/Button"
 import H1 from "../components/H1"
+import H2 from "../components/H2"
 
 const IndexPage = () => {
   return (
@@ -35,9 +36,6 @@ const IndexPage = () => {
   )
 }
 
-const H2 = tw.h2`
-  text-2xl font-semibold py-5 pb-2
-`
 const P = tw.p`
   text-base
   py-1
