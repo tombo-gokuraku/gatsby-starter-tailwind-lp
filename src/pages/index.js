@@ -5,9 +5,13 @@ import tw from "twin.macro"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
+import Button from "../components/Button"
+
 const IndexPage = () => {
   return (
     <Layout>
+      <Button>hoge</Button>
+      <Button reverse>reverse</Button>
       <SEO title="Home" />
       <H1>Gatsby starter using Emotin and tailwind</H1>
       <H2>Install</H2>
