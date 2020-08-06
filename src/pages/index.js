@@ -8,6 +8,7 @@ import SEO from "../components/SEO"
 import Button from "../components/Button"
 import H1 from "../components/H1"
 import H2 from "../components/H2"
+import H3 from "../components/H3"
 
 const IndexPage = () => {
   return (
@@ -15,12 +16,9 @@ const IndexPage = () => {
       <Button>hoge</Button>
       <Button reverse>reverse</Button>
       <SEO title="Home" />
-      <H1>Gatsby starter using Emotin and tailwind</H1>
-      <H1>Gatsby starter using Emotin and tailwind</H1>
-      <H1>Gatsby starter using Emotin and tailwind</H1>
-      <H1>Gatsby starter using Emotin and tailwind</H1>
-      <H1>Gatsby starter using Emotin and tailwind</H1>
-      <H2>Install</H2>
+      <H1>h1</H1>
+      <H2>h2</H2>
+      <H3>h3</H3>
       <P>Install the Gatsby CLI and create a project with this starter</P>
       <Pre>
         <code>
