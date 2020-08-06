@@ -12,14 +12,18 @@
     "gatsby-plugin-emotion": "^4.3.10",
     "gatsby-plugin-manifest": "^2.4.20",
     "gatsby-plugin-offline": "^3.2.20",
+    "gatsby-plugin-preact": "^4.0.9",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.21",
     "gatsby-source-filesystem": "^2.3.22",
     "gatsby-transformer-sharp": "^2.5.11",
+    "preact": "^10.4.7",
+    "preact-render-to-string": "^5.1.10",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-icons": "^3.10.0",
     "twin.macro": "^1.6.1"
   },
   "devDependencies": {
@@ -34,6 +38,7 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
     "gatsby-plugin-eslint": "^2.0.8",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.11",
     "prettier": "2.0.5",
     "stylelint": "^13.6.1",
     "stylelint-config-recommended": "^3.0.0",
@@ -41,7 +46,10 @@
     "stylelint-processor-styled-components": "^1.10.0"
   },
   "keywords": [
-    "gatsby", "emotion", "tailwindcss", "Landing Pages"
+    "gatsby",
+    "emotion",
+    "tailwindcss",
+    "Landing Pages"
   ],
   "license": "0BSD",
   "scripts": {

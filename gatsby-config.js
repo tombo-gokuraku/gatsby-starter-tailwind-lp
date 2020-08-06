@@ -33,5 +33,12 @@ module.exports = {
     "gatsby-plugin-eslint",
     "gatsby-plugin-emotion",
     "@danbruegge/gatsby-plugin-stylelint",
+    "gatsby-plugin-preact",
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        analyzerPort: "4000",
+      },
+    },
   ],
 }
