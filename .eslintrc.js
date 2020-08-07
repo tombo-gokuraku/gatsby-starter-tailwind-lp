@@ -6,6 +6,13 @@ module.exports = {
     "emotion/no-vanilla": "error",
     "emotion/import-from-emotion": "error",
     "emotion/styled-import": "error",
+    "react/self-closing-comp": [
+      "error",
+      {
+        component: true,
+        html: true,
+      },
+    ],
   },
   globals: {
     __PATH_PREFIX__: true,
