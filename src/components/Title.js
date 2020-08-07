@@ -8,7 +8,7 @@ import "twin.macro"
 const Title = ({ siteTitle }) => {
   return (
     <h1 tw="text-3xl">
-      <Link to="/" tw="text-white no-underline">
+      <Link to="/" tw="text-gray-900 no-underline">
         {siteTitle}
       </Link>
     </h1>
