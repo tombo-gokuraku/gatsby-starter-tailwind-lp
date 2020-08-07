@@ -12,6 +12,7 @@ import H3 from "../components/H3"
 import H4 from "../components/H4"
 import H5 from "../components/H5"
 import H6 from "../components/H6"
+import P from "../components/P"
 
 const IndexPage = () => {
   return (
@@ -39,11 +40,6 @@ const IndexPage = () => {
     </Layout>
   )
 }
-
-const P = tw.p`
-  text-base
-  py-1
-`
 
 const Pre = tw.pre`
   text-sm
