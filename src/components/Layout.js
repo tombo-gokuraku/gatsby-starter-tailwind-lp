@@ -24,14 +24,7 @@ const Layout = ({ children }) => {
       <Header>
         <Title siteTitle={data.site.siteMetadata.title} />
       </Header>
-      <div tw="container px-4 pt-0 pb-6 mx-auto my-0 max-w-screen-lg">
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <main>{children}</main>
       <Footer />
     </>
   )
