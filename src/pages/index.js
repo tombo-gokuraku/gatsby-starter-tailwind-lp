@@ -145,7 +145,7 @@ const IndexPage = () => {
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
         </P>
-        <Card tw="w-1/4 bg-primary-100">
+        <Card>
           <div tw="rounded-lg w-full">
             <Image
               fluid={data.file.childImageSharp.fluid}
