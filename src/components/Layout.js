@@ -7,6 +7,7 @@ import "twin.macro"
 import Header from "./Header"
 import Footer from "./Footer"
 import Title from "./Title"
+import Navigation from "./Navigation"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
     <>
       <Header>
         <Title siteTitle={data.site.siteMetadata.title} />
+        <Navigation />
       </Header>
       <main>{children}</main>
       <Footer />
