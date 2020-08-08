@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
 import tw from "twin.macro"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -14,8 +15,21 @@ import H4 from "../components/H4"
 import H5 from "../components/H5"
 import H6 from "../components/H6"
 import P from "../components/P"
+import Card from "../components/Card"
+import Image from "../components/Image"
 
 const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "gatsby-astronaut.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <Layout>
       <Button>hoge</Button>
@@ -128,6 +142,26 @@ const IndexPage = () => {
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
         </P>
+        <Card tw="w-1/4 bg-primary-100">
+          <div tw="rounded-lg w-full">
+            <Image
+              fluid={data.file.childImageSharp.fluid}
+              wrapperStyle={[tw`rounded-t-lg`]}
+              alt="hoge"
+            />
+          </div>
+          <div tw="p-6">
+            <P>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet.
+            </P>
+            <Button reverse>Learn More</Button>
+          </div>
+        </Card>
+        <Card />
       </Section>
     </Layout>
   )
