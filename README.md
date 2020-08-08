@@ -20,7 +20,7 @@
 
     ```shell
     # create a new Gatsby site using the default starter
-    gatsby new emotion_tailwind https://github.com/tombo-gokuraku/gatsby-starter-emotion-tailwind
+    gatsby new emotion_tailwind https://github.com/tombo-gokuraku/gatsby-starter-tailwind-lp
     ```
 
 1.  **Start developing.**

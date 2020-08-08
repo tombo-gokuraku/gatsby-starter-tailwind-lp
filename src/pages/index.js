@@ -49,7 +49,7 @@ const IndexPage = () => {
         <Pre>
           <code>
             gatsby new emotion_tailwind
-            https://github.com/tombo-gokuraku/gatsby-starter-emotion-tailwind
+            https://github.com/tombo-gokuraku/gatsby-starter-tailwind-lp
           </code>
           <br />
           <code>cd emotion_tailwind</code>
