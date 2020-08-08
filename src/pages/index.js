@@ -17,6 +17,7 @@ import H6 from "../components/H6"
 import P from "../components/P"
 import Card from "../components/Card"
 import Image from "../components/Image"
+import SocialLinks from "../components/SocialLinks"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -163,6 +164,7 @@ const IndexPage = () => {
         </Card>
         <Card />
       </Section>
+      <SocialLinks />
     </Layout>
   )
 }
