@@ -33,8 +33,10 @@ const IndexPage = () => {
   `)
   return (
     <Layout>
-      <Button>hoge</Button>
-      <Button reverse>reverse</Button>
+      <Button href={"#!"}>hoge</Button>
+      <Button reverse href={"#!"}>
+        reverse
+      </Button>
       <SEO title="Home" />
       <Section>
         <H1>h1</H1>
@@ -159,7 +161,9 @@ const IndexPage = () => {
               dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
               sanctus est Lorem ipsum dolor sit amet.
             </P>
-            <Button reverse>Learn More</Button>
+            <Button reverse href={"#!"}>
+              Learn More
+            </Button>
           </div>
         </Card>
         <Card />
