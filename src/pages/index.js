@@ -145,28 +145,13 @@ const IndexPage = () => {
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
         </P>
-        <Card>
-          <div tw="rounded-lg w-full">
-            <Image
-              fluid={data.file.childImageSharp.fluid}
-              wrapperStyle={[tw`rounded-t-lg`]}
-              alt="hoge"
-            />
-          </div>
-          <div tw="p-6">
-            <P>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
-            </P>
-            <Button reverse href={"#!"}>
-              Learn More
-            </Button>
-          </div>
-        </Card>
-        <Card />
+
+        <div tw="w-1/2">
+          <Card
+            image={data.file.childImageSharp.fluid}
+            title={"Lorem ipsum dolor sit amet"}
+          />
+        </div>
       </Section>
       <SocialLinks />
     </Layout>
