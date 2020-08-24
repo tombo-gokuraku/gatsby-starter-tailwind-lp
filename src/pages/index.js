@@ -15,8 +15,7 @@ import H4 from "../components/H4"
 import H5 from "../components/H5"
 import H6 from "../components/H6"
 import P from "../components/P"
-import Card from "../components/Card"
-import Image from "../components/Image"
+import ModalCard from "../components/ModalCard"
 import SocialLinks from "../components/SocialLinks"
 import BackgroundImage from "../components/BackgroundImage"
 
@@ -148,7 +147,7 @@ const IndexPage = () => {
         </P>
 
         <div tw="w-1/2">
-          <Card
+          <ModalCard
             image={data.file.childImageSharp.fluid}
             title={"Lorem ipsum dolor sit amet"}
           />
