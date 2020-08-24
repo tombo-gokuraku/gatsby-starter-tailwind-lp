@@ -18,6 +18,7 @@ import P from "../components/P"
 import Card from "../components/Card"
 import Image from "../components/Image"
 import SocialLinks from "../components/SocialLinks"
+import BackgroundImage from "../components/BackgroundImage"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -153,6 +154,23 @@ const IndexPage = () => {
           />
         </div>
       </Section>
+      <BackgroundImage
+        fluid={data.file.childImageSharp.fluid}
+        imgStyle={{
+          objectFit: "contain",
+        }}
+      >
+        <Section tw="bg-transparent">
+          <P>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+          </P>
+        </Section>
+      </BackgroundImage>
+
       <SocialLinks />
     </Layout>
   )
