@@ -31,7 +31,7 @@ const navigationLinkData = [
 
 function Navigation() {
   return (
-    <ul tw="flex items-center justify-around bg-primary fixed bottom-0 left-0 w-full md:(static bottom-auto w-auto)">
+    <ul tw="flex items-center justify-around bg-primary fixed bottom-0 left-0 w-full md:(static bottom-auto w-auto) z-20">
       {navigationLinkData.map((link, index) => {
         return (
           <li key={index}>
