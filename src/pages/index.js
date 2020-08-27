@@ -2,6 +2,7 @@
 import { jsx } from "@emotion/core"
 import tw from "twin.macro"
 import { useStaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -18,6 +19,8 @@ import P from "../components/P"
 import ModalCard from "../components/ModalCard"
 import SocialLinks from "../components/SocialLinks"
 import BackgroundImage from "../components/BackgroundImage"
+import CardNormal from "../components/CardNormal"
+import CardNormalContainer from "../components/CardNormalContainer"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -33,6 +36,17 @@ const IndexPage = () => {
   `)
   return (
     <Layout>
+      <section>
+        <div tw="container mx-auto px-4 md:px-0">
+          <CardNormalContainer />
+        </div>
+      </section>
+      <CardNormal>
+        <div tw="rounded-lg">
+          <Image fluid={data.file.childImageSharp.fluid} />
+        </div>
+        <H3>Lorem</H3>
+      </CardNormal>
       <Button href={"#!"}>hoge</Button>
       <Button reverse href={"#!"}>
         reverse
