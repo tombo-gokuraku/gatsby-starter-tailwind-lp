@@ -4,12 +4,12 @@ const CardNormal = tw.div`
 flex
 flex-col
 w-full
-mb-3
+mb-5
 text-center
 break-words
 rounded-lg
 shadow-lg
-md:w-3/12
+lg:(w-3/12)
 transform
 hover:(shadow-xl scale-105)
 duration-200
