@@ -36,7 +36,7 @@ function Navigation() {
         return (
           <li key={index}>
             <Link
-              href={link.path}
+              to={link.path}
               tw="flex flex-col justify-center items-center text-gray-900 text-base sm:text-lg text-center hover:text-secondary transition-colors duration-200 ease-in-out p-2 md:(mx-2 p-0)"
             >
               <div tw="md:hidden">{link.icon}</div>
