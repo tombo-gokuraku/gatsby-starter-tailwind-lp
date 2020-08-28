@@ -28,7 +28,7 @@ const cardData = [
 function CardNormalContainer() {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { relativePath: { glob: "card_normal*" } }) {
+      allFile(filter: { relativePath: { glob: "item*" } }) {
         nodes {
           childImageSharp {
             fluid {
