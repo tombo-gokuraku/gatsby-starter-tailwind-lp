@@ -67,8 +67,7 @@ function ModalImage({ showModal, setShowModal, image }) {
             }
           `}
           isOpen={showModal}
-          onRequestClose={e => {
-            e.stopPropagation()
+          onRequestClose={() => {
             setShowModal(false)
           }}
           shouldCloseOnOverlayClick={true}
