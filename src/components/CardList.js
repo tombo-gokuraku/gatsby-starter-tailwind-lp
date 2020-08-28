@@ -9,7 +9,7 @@ function CardList({ children }) {
       css={[
         tw`even:(bg-primary-100)`,
         css`
-          :nth-child(even) > div {
+          :nth-of-type(even) > div {
             ${tw`flex-row-reverse`}
           }
         `,
