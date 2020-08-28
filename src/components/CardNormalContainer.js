@@ -41,7 +41,7 @@ function CardNormalContainer() {
     }
   `)
   return (
-    <div tw="flex flex-wrap mx-auto justify-around items-center">
+    <div tw="flex flex-wrap mx-auto justify-between items-center">
       {data.allFile.nodes.map((image, index) => {
         return (
           <CardNormal key={image.id}>

@@ -15,7 +15,9 @@ function CardList({ children }) {
         `,
       ]}
     >
-      <div tw="flex flex-wrap container mx-auto px-4 md:px-0">{children}</div>
+      <div tw="flex flex-wrap container mx-auto p-4 justify-between items-center">
+        {children}
+      </div>
     </div>
   )
 }

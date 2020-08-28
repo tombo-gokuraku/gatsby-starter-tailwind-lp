@@ -46,13 +46,13 @@ function CardListContainer() {
       {data.allFile.nodes.map((image, index) => {
         return (
           <CardList key={image.id}>
-            <div tw="w-full p-6 sm:w-1/2">
+            <div tw="w-full sm:w-5/12">
               <Image
                 fluid={image.childImageSharp.fluid}
                 style={tw`w-full h-48`}
               />
             </div>
-            <div tw="w-full p-6 sm:w-1/2">
+            <div tw="w-full sm:w-5/12">
               <H3>{cardData[index].title}</H3>
               <P>{cardData[index].description}</P>
             </div>

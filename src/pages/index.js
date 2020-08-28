@@ -37,7 +37,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <section>
-        <div tw="container mx-auto px-4 md:px-0">
+        <div tw="container mx-auto px-4">
           <CardNormalContainer />
         </div>
       </section>
