@@ -19,8 +19,8 @@ import P from "../components/P"
 import ModalCard from "../components/ModalCard"
 import SocialLinks from "../components/SocialLinks"
 import BackgroundImage from "../components/BackgroundImage"
-import CardNormal from "../components/CardNormal"
 import CardNormalContainer from "../components/CardNormalContainer"
+import CardListContainer from "../components/CardListContainer"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -41,12 +41,10 @@ const IndexPage = () => {
           <CardNormalContainer />
         </div>
       </section>
-      <CardNormal>
-        <div tw="rounded-lg">
-          <Image fluid={data.file.childImageSharp.fluid} />
-        </div>
-        <H3>Lorem</H3>
-      </CardNormal>
+      <section>
+        <CardListContainer />
+      </section>
+
       <Button href={"#!"}>hoge</Button>
       <Button reverse href={"#!"}>
         reverse
