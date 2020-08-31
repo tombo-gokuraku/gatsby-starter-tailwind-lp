@@ -36,6 +36,7 @@ const IndexPage = () => {
   `)
   return (
     <Layout>
+      <SEO title="Home" />
       <section>
         <div tw="container mx-auto px-4">
           <CardNormalContainer />
@@ -49,7 +50,6 @@ const IndexPage = () => {
       <Button reverse href={"#!"}>
         reverse
       </Button>
-      <SEO title="Home" />
       <Section>
         <H1>h1</H1>
         <H2>h2</H2>

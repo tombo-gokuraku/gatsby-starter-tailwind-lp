@@ -16,8 +16,6 @@ function ModalImage({ showModal, setShowModal, image }) {
         <Modal
           portalClassName={css`
             & .overlay-base {
-              width: 100%;
-              height: 100%;
               padding: 1rem;
               position: fixed;
               top: 0;
